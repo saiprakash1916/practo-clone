@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Camphor, Helvetica, Arial, sans-serif !important;
+}
+body {
+  background-color: white;
+}
+/*header block*/
+.headerBlock {
+  border: 1ps solid white;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+.headerBlock article {
+  display: flex;
+}
+.logo {
+  width: 20%;
+}
+.logo img {
+  width: 100px;
+  position: absolute;
+  top: 25px;
+  left: 180px;
+}
+.center {
+  width: 45%;
+}
+.center ul {
+  display: flex;
+  list-style: none;
+}
+.center ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  position: relative;
+  top: 20px;
+  padding: 0 30px;
+}
+.center ul li a b {
+  font-size: 14px;
+  position: relative;
+  right: 28px;
+}
+.rightMenu {
+  width: 35%;
+}
+.rightMenu select {
+  position: relative;
+  top: 25px;
+  border: transparent;
+  padding: 0 5px;
+}
+.rightMenu button {
+  background: transparent;
+  border: 1px solid lightgray;
+  width: 100px;
+  height: 25px;
+  border-radius: 2px;
+  position: relative;
+  top: 25px;
+  left: 5px;
+  cursor: pointer;
+}
+/*search block*/
+.searchBlock {
+  margin-top: 20px;
+  width: 100%;
+  background-color: white;
+  height: 80px;
+}
+.searchBlock .search {
+  display: flex;
+}
+.location input {
+  height: 35px;
+  margin-left: 180px;
+  width: 270px;
+  padding: 0 35px;
+}
+.testEnter input {
+  height: 35px;
+  width: 390px;
+  padding: 0 35px;
+}
+.location span i {
+  position: absolute;
+  margin-top: 7px;
+  margin-left: -260px;
+  width: 20px;
+}
+.testEnter span i {
+  position: absolute;
+  margin-top: 7px;
+  margin-left: -380px;
+}
+.plus img {
+  width: 200px;
+  margin-left: 280px;
+}
+/*banner block*/
+.bannerBlock img {
+  width: 100%;
+}
+.doctor {
+  display: flex;
+}
+.doctor .img1 {
+  width: 630px;
+  margin-left: 100px;
+}
+.doctor .img2 {
+  width: 630px;
+}
+/*covid block*/
+.covidBlock {
+  background-color: #28328c;
+  width: 100%;
+  height: 650px;
+}
+.helping h2 {
+  color: white;
+  margin-left: 180px;
+}
+h2 {
+  position: relative;
+  top: 55px;
+}
+.covidimages {
+  display: flex;
+}
+.covidimages img {
+  width: 400px;
+  position: relative;
+  top: 100px;
+  left: 160px;
+  padding: 0 20px;
+}
+/*top doctors*/
+.doctors {
+  display: flex;
+}
+.head h2 {
+  position: relative;
+  top: 80px;
+  left: 170px;
+}
+.head p {
+  position: relative;
+  top: 90px;
+  left: 170px;
+  font-size: 15px;
+}
+.view button {
+  position: relative;
+  top: 90px;
+  left: 600px;
+  color: #14bef0;
+  border-color: #14bef0;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 4px;
+}
+.combo img {
+  position: relative;
+  top: 110px;
+  left: 170px;
+  width: 1100px;
+}
+.book h2 {
+  margin-left: 170px;
+  margin-top: 100px;
+}
+.book p {
+  margin-left: 170px;
+  margin-top: 70px;
+}
+/*slider part*/
+.slider {
+  overflow: hidden;
+}
+.slider img {
+  width: 250px;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 200px;
+  animation: 20s slider infinite;
+}
+.slider figure img {
+  width: 300px;
+  float: left;
+}
+.h {
+  width: 85%;
+  margin: 0 auto;
+}
+/*health experts*/
+.healthexperts {
+  margin-top: 70px;
+  margin-left: 300px;
+}
+.health {
+  display: flex;
+}
+.read h1 {
+  font-size: 30px;
+}
+.read p {
+  padding: 20px 0;
+  font-size: 14px;
+}
+.see {
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #14bef0;
+  color: white;
+  font: bold;
+  border: 1px solid white;
+}
+.twoimages img {
+  height: 280px;
+  width: 600px;
+  margin-left: 40px;
+}
+/*second slide*/
+.secondslide {
+  position: relative;
+  top: 10px;
+  overflow: hidden;
+  border: none;
+}
+.second {
+  position: relative;
+  height: 400px;
+  left: 50px;
+  overflow: auto;
+  border: none;
+}
+.mySlides {
+  display: none;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 8px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 10px;
+  }
+}
+.footerimage {
+  margin-top: 50px;
+  background-color: rgba(211, 211, 211, 0.24);
+}
+.foot {
+  display: flex;
+}
+.foot img {
+  margin-top: 100px;
+  width: 332px;
+  height: 376px;
+  margin-left: 300px;
+}
+.foot h1 {
+  margin-top: 120px;
+  margin-left: 110px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.foot p {
+  margin-top: 20px;
+  margin-left: 110px;
+  font-size: 14px;
+}
+.foot .link {
+  margin-top: 20px;
+  margin-left: 110px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.code .countrycode {
+  margin-top: 10px;
+  width: 55px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px;
+  margin-left: 110px;
+}
+.code .number {
+  width: 255px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px;
+}
+.sms {
+  height: 50px;
+  width: 100px;
+  background-color: #14bef0;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  font-weight: 700;
+}
+.links {
+  display: flex;
+}
+.google img {
+  margin-left: 750px;
+  width: 150px;
+  margin-top: -200px;
+  margin-bottom: 100px;
+}
+.apple img {
+  width: 150px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  margin-top: -200px;
+}
+/*footer block*/
+.footerBlock {
+  height: 600px;
+  position: relative;
+  width: 100%;
+  margin: 0% auto;
+  color: #fff;
+  background-color: #2832ac;
+  border: none;
+}
+.footer {
+  height: 500px;
+  position: relative;
+  top: 30px;
+  display: flex;
+  padding: 30px 30px;
+  width: 80%;
+  margin: 0% auto;
+  border: none;
+}
+.footer div li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.footer div {
+  width: 15%;
+  margin: 10px auto;
+  font-size: 14px;
+}
+.footer div li {
+  list-style: none;
+  font-size: 14px;
+  padding: 3px;
+  font-weight: 100;
+}
+h5 {
+  font-size: 14px;
+  padding: 3px;
+}
+.footer div li:hover {
+  text-decoration: underline;
+  width: 100%;
+  transition: ease-in all 0.7s;
+  transform: translate(-50%-50%);
+  cursor: pointer;
+}
+.lastlogo img {
+  position: relative;
+  top: -120px;
+  right: -670px;
+  width: 180px;
+}
+.lastlogo p {
+  text-align: center;
+  margin-top: -100px;
+  color: lightgray;
+}
